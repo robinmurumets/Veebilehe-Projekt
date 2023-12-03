@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minu Veebileht</title>
+
+</head>
+<body>
+    <header class="header">
+        <h1 class="textoutline">Tere, külaline!</h1>
+    </header>
+    
+    <div class="taustP">
+
+        <script>
+            // Array of image URLs
+            const imageUrls = [
+                'https://cdn.geekwire.com/wp-content/uploads/2016/11/20161128_Amazon_Fulfillment_center_144.jpg',
+                'https://assets.aboutamazon.com/dims4/default/8534398/2147483647/strip/true/crop/1698x956+1+0/resize/1320x743!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F16%2Fda%2F1146f676498a82e45a0aa0337d98%2Famazon-fc.jpg',
+                'https://npr.brightspotcdn.com/dims4/default/3696684/2147483647/strip/true/crop/600x338+0+31/resize/1200x675!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Flegacy%2Fsites%2Fkuer%2Ffiles%2F201912%2Famazon_warehouse_scott_lewis_flickr.jpg',
+                // Add more image URLs as needed
+            ];
+
+            let currentIndex = 0;
+
+            function changeBackground() {
+                document.body.style.backgroundImage = `url('${imageUrls[currentIndex]}')`;
+                currentIndex = (currentIndex + 1) % imageUrls.length;
+            }
+
+            // Change background every 5 seconds (5000 milliseconds)
+            setInterval(changeBackground, 5000);
+
+            // Initial background setup
+            changeBackground();
+        </script>
+        <nav>
+            <img src="pildid_videod/logo.png" class="logo">
+            
+            <ul>
+                <li><a href="Veebileht_1.html">Home</a></li>
+                <li><a href="Veebileht_2.html">About</a></li>
+                <li><a href="Veebileht_3.html">Shop</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1 class="textoutline">Tule ja tutvu Amazoniga!</h1>
+            <a href="#">Avasta</a>
+        </div>
+        
+    </div>
+    
+    
+
+</body>
+
+</html>
