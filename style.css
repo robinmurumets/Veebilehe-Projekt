@@ -9,9 +9,8 @@ body {
     box-sizing: border-box;
 }
 
-
 .taust{
-    background-color: #8312df6c;
+    background-color: #000000e5;
     height: 100vh;
     width:100%;
     position: absolute;
@@ -26,6 +25,7 @@ body {
     height: 100vh;
     width:100%;
     position: absolute;
+    object-fit: cover;
     padding: 0 5%;
     display: flex;
     align-items: center;
@@ -35,9 +35,10 @@ body {
 /* Nav bar*/
 
 nav .logo {
-    width: 150px;
+    width: 210px;
     height: auto;
-    left: 2%;
+    left: 1%;
+    top: 1%;
     
 }
 
@@ -61,42 +62,51 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #000000;
-    font-size: 25px;
+    font-size: 37px;
+    text-shadow:
+        -0.8px -0.8px 0 #ffffff,
+        0.8px -0.8px 0 #ffffff,
+        -0.8px 0.8px 0 #ffffff,
+        0.8px 0.8px 0 #ffffff;
+    border: 2px solid #ffffff;
+    padding: 2px 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: "", sans-serif;
 }
+
+nav ul li a:hover {
+    background-color: aliceblue;
+}
+
+
+
+
 
 .content {
     text-align: center;
     font-size: 5px;
 }
 
-
-.textoutline {
-    /*Annab tekstile outline-i*/
-    text-shadow:
-    -1px -1px 0 #ffffff,
-    1px -1px 0 #ffffff,
-    -1px 1px 0 #ffffff,
-    1px 1px 0 #ffffff;
-}
-
-
-
-
 .content h1 {
-    font-size: 160px;
+    font-size: 124px;
     color: #000000;
     font-weight: 600;
+    font-family: 'Lato', sans-serif;
+
 }
 
 .content a {
     text-decoration: none;
     display: inline-block;
     color: #000000;
-    font-size: 24px;
+    font-size: 50px;
     border: 2px solid #ffffff;
-    padding: 14px 70px;
+    padding: 10px 60px;
     border-radius: 50px;
-    margin-top: 20px;
+    margin-top: 0px;
+    font-family: 'Lato', sans-serif;
+
 }
 
 .content a:hover {
@@ -104,8 +114,24 @@ nav ul li a {
 }
 
 
+
+
+/*Annab headerile tausta värvi*/
 .header {
-    background-color: #000000; /* Set the background color of the header */
-    padding: 0.1px; /* Add some padding for better visibility */
-    text-align: left; /* Center the text within the header */
+    background-color: #000000;
+    padding: 0.1px; 
+    text-align: left; 
 }
+
+
+
+/*Annab tekstile outline-i*/
+.textoutline {
+    text-shadow:
+        -1px -1px 0 #ffffff,
+        1px -1px 0 #ffffff,
+        -1px 1px 0 #ffffff,
+        1px 1px 0 #ffffff;
+}
+
+

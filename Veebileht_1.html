@@ -9,19 +9,21 @@
 
 </head>
 <body>
-    <header class="header">
-        <h1 class="textoutline">Tere, külaline!</h1>
-    </header>
+
+
+
     
     <div class="taustP">
 
         <script>
-            // Array of image URLs
+            // Pildi URL-id
             const imageUrls = [
+                'https://images.hellomagazine.com/horizon/landscape/8ed6b8ac85da-amazon-prime-day-2023.jpg',
+                'https://img2.wallspic.com/crops/7/5/6/1/11657/11657-paper-danbo-robot-amazon-macro_photography-1920x1080.jpg',
+                'https://qtxasset.com/quartz/qcloud4/media/image/package-at-doorstep.jpg?VersionId=I_m1Pzg5bzdOMLX40Fmo8LTkNlbm8lj6',
                 'https://cdn.geekwire.com/wp-content/uploads/2016/11/20161128_Amazon_Fulfillment_center_144.jpg',
-                'https://assets.aboutamazon.com/dims4/default/8534398/2147483647/strip/true/crop/1698x956+1+0/resize/1320x743!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F16%2Fda%2F1146f676498a82e45a0aa0337d98%2Famazon-fc.jpg',
-                'https://npr.brightspotcdn.com/dims4/default/3696684/2147483647/strip/true/crop/600x338+0+31/resize/1200x675!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Flegacy%2Fsites%2Fkuer%2Ffiles%2F201912%2Famazon_warehouse_scott_lewis_flickr.jpg',
-                // Add more image URLs as needed
+                'https://legacyscs.com/wp-content/uploads/2020/08/LEGACY-Supply-Chain-Services-Last-Miley-Delivery.jpg',
+                'https://image.cnbcfm.com/api/v1/image/105821343-1553842141852gettyimages-1131898584.jpeg?v=1681914887&w=1920&h=1080',
             ];
 
             let currentIndex = 0;
@@ -31,10 +33,9 @@
                 currentIndex = (currentIndex + 1) % imageUrls.length;
             }
 
-            // Change background every 5 seconds (5000 milliseconds)
+            // Vahetab pilti iga x ms tagand
             setInterval(changeBackground, 5000);
 
-            // Initial background setup
             changeBackground();
         </script>
         <nav>
@@ -48,7 +49,7 @@
         </nav>
         <div class="content">
             <h1 class="textoutline">Tule ja tutvu Amazoniga!</h1>
-            <a href="#">Avasta</a>
+            <a class="textoutline" href="Veebileht_2.html">Avasta</a>
         </div>
         
     </div>
