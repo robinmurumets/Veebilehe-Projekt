@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style_leht2.css">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,20 +7,92 @@
     <title>Minu Veebileht</title>
 
 </head>
-<body>
-
-    <div class="taust">
-        <nav>
-            <img src="pildid_videod/logo.png" class="logo">
-            <ul>
-                <li><a href="Veebileht_1.html">Home</a></li>
-                <li><a href="Veebileht_2.html">About</a></li>
-                <li><a href="Veebileht_3.html">Shop</a></li>
-            </ul>
-        </nav>
-    </div>
+    <body>
 
 
-</body>
 
+        <section>
+            <h1>Reveal Element on Scroll</h1>
+        </section>
+        <section>
+            <div class="container reveal">
+                <h2>Your Title</h2>
+                <div class="cards">
+                    <div class="text-card">
+                        <h3>Title</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus voluptatibus autem cumque possimus quis animi asperiores? Ad blanditiis natus, ipsum minima omnis ex enim aliquid doloribus delectus aliquam soluta quod.</p>
+                    </div>
+                    <div class="text-card">
+                        <h3>Title</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus voluptatibus autem cumque possimus quis animi asperiores? Ad blanditiis natus, ipsum minima omnis ex enim aliquid doloribus delectus aliquam soluta quod.</p>
+                    </div>
+                    <div class="text-card">
+                        <h3>Title</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus voluptatibus autem cumque possimus quis animi asperiores? Ad blanditiis natus, ipsum minima omnis ex enim aliquid doloribus delectus aliquam soluta quod.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container reveal">
+                <h2>Your Title</h2>
+                <div class="cards">
+                    <div class="text-card">
+                        <h3>Title</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus voluptatibus autem cumque possimus quis animi asperiores? Ad blanditiis natus, ipsum minima omnis ex enim aliquid doloribus delectus aliquam soluta quod.</p>
+                    </div>
+                    <div class="text-card">
+                        <h3>Title</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus voluptatibus autem cumque possimus quis animi asperiores? Ad blanditiis natus, ipsum minima omnis ex enim aliquid doloribus delectus aliquam soluta quod.</p>
+                    </div>
+                    <div class="text-card">
+                        <h3>Title</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus voluptatibus autem cumque possimus quis animi asperiores? Ad blanditiis natus, ipsum minima omnis ex enim aliquid doloribus delectus aliquam soluta quod.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container reveal">
+                <h2>Your Title</h2>
+                <div class="cards">
+                    <div class="text-card">
+                        <h3>Title</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus voluptatibus autem cumque possimus quis animi asperiores? Ad blanditiis natus, ipsum minima omnis ex enim aliquid doloribus delectus aliquam soluta quod.</p>
+                    </div>
+                    <div class="text-card">
+                        <h3>Title</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus voluptatibus autem cumque possimus quis animi asperiores? Ad blanditiis natus, ipsum minima omnis ex enim aliquid doloribus delectus aliquam soluta quod.</p>
+                    </div>
+                    <div class="text-card">
+                        <h3>Title</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus voluptatibus autem cumque possimus quis animi asperiores? Ad blanditiis natus, ipsum minima omnis ex enim aliquid doloribus delectus aliquam soluta quod.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script type="text/javascript">
+            window.addEventListener('scroll', reveal);
+
+            function reveal(){
+                var reveals = document.querySelectorAll('.reveal');
+
+                for (var i = 0; i < reveals.length; i++){
+
+                    var windowheight = window.innerHeight;
+                    var revealtop = reveals[i].getBoundingClientRect().top;
+                    var revealpoint = 150;
+
+                    if(revealtop < windowheight - revealpoint){
+                        reveals[i].classlist.add('active');
+                    }
+                    
+                    else{
+                        reveals[i].classList.remove('active');
+                    }
+                }
+            }
+        </script>
+    </body>
 </html>
