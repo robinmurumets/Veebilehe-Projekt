@@ -1,99 +1,71 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(45deg, #1D212B, #080e1d);
+  overflow-x: hidden;
   
-  #map-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Full height of the viewport */
-  }
-  
-  /* Add additional styling for the map element */
-  #map {
-    width: 80%; /* Adjust the width of the map as needed */
-    height: 80%; /* Adjust the height of the map as needed */
-  }
+}
 
-  /* Nav bar*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#map {
+  width: 70%;
+  height: 70%;
+  margin-left: auto; 
+  margin-right: auto;
+  margin-top: 150px;
+  position: relative;
+}
 
 nav .logo {
-    width: 210px;
-    height: auto;
-    left: 1%;
-    top: 1%;
-    
+  width: 210px;
+  height: auto;
+  left: 1%;
+  margin-top: 20px;
 }
 
 nav {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0px 4%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0px 4%; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin-left: 30px;
-    position: relative;
-    }
-
-nav ul li a {
-    text-decoration: none;
-    color: #ffff;
-    font-size: 25px;
-    position: relative;
+  list-style: none;
+  display: inline-block;
+  margin-left: 30px;
+  position: relative;
 }
 
+nav ul li a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 25px;
+  position: relative;
+}
 
 nav ul li a:after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: rgb(236, 142, 0);
-    transition: width 0.3s ease; 
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: rgb(236, 142, 0);
+  transition: width 0.3s ease;
 }
 
 nav ul li a:hover:after {
-    width: 100%;
-}
-
-
-.content {
-    text-align: center;
-    font-size: 5px;
-}
-
-.content h1 {
-    font-size: 124px;
-    color: #000000;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
-
-}
-
-.content a {
-    text-decoration: none;
-    display: inline-block;
-    color: #000000;
-    font-size: 50px;
-    border: 2px solid #ffffff;
-    padding: 10px 60px;
-    border-radius: 50px;
-    margin-top: 0px;
-    font-family: "Poppins", sans-serif;
-
-}
-
-.content a:hover {
-    background-color: rgb(236, 142, 0);
+  width: 100%;
 }

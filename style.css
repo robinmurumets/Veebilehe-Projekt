@@ -11,7 +11,12 @@ body {
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
+
 
 .taust{
     background-color: #000000e5;
@@ -102,7 +107,7 @@ nav ul li a:hover:after {
 
 .content h1 {
     font-size: 124px;
-    color: #000000;
+    color: #ffffff;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
 
@@ -111,7 +116,7 @@ nav ul li a:hover:after {
 .content a {
     text-decoration: none;
     display: inline-block;
-    color: #000000;
+    color: #ffffff;
     font-size: 50px;
     border: 2px solid rgb(236, 142, 0);
     padding: 10px 60px;
@@ -121,6 +126,7 @@ nav ul li a:hover:after {
 
 }
 
+/* Määrab hoverides värvi joonele */
 .content a:hover {
     background-color: rgb(236, 142, 0);
 }
@@ -131,14 +137,4 @@ nav ul li a:hover:after {
     background-color: #000000;
     padding: 0.1px; 
     text-align: left; 
-}
-
-
-/*Annab tekstile outline-i*/
-.textoutline {
-    text-shadow:
-        -1px -1px 0 rgb(255, 255, 255),
-        1px -1px 0 #ffffff,
-        -1px 1px 0 #ffffff,
-        1px 1px 0 #ffffff;
 }
