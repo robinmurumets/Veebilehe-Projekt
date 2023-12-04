@@ -3,9 +3,7 @@
 
 
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+    overflow: hidden;
 
 }
 
@@ -31,11 +29,13 @@ body {
 
 .taustP{
     background-color: rgba(0, 0, 0, 0.445);
-    height: 100vh;
-    width:100%;
+    height: 101vh;
+    width:101%;
+    left: -1px;
+    top: -1px;
     position: absolute;
     object-fit: cover;
-    padding: 0 5%;
+    padding: 0%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,6 +57,8 @@ nav .logo {
     left: 300px;
 
 }
+
+
 
 nav {
     width: 100%;
@@ -81,6 +83,7 @@ nav ul li a {
     color: #ffff;
     font-size: 25px;
     position: relative;
+    font-family: "Poppins", sans-serif;
 }
 
 
@@ -137,4 +140,66 @@ nav ul li a:hover:after {
     background-color: #000000;
     padding: 0.1px; 
     text-align: left; 
+}
+
+
+/*Annab tekstile outline-i*/
+.textoutline {
+    text-shadow:
+        -1px -1px 0 rgb(255, 255, 255),
+        1px -1px 0 #ffffff,
+        -1px 1px 0 #ffffff,
+        1px 1px 0 #ffffff;
+}
+
+
+
+.container{
+    width: 201vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+
+    
+}
+.wrapper{
+    width: 600%;
+    display: flex;
+    animation: slide 30s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-16.665%);
+    }
+    50%{
+        transform: translateX(-16.665%);
+    }
+    55%{
+        transform: translateX(-33.34%);
+    }
+    75%{
+        transform: translateX(-33.34%);
+    }
+    80%{
+        transform: translateX(-50%);
+    }
+    95%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
+}
+
+img{
+    width: 100%;
 }

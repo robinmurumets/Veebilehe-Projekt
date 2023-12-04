@@ -108,7 +108,9 @@ section .cards .text-card h3{
     height: 100%;
 }
 
-
+.textT{
+    font-size: 23px;
+}
 
 
 
