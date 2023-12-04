@@ -1,56 +1,30 @@
-/*Font "Poppins"*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&display=swap');
-
-
-body {
+body, html {
     margin: 0;
     padding: 0;
-    height: 100vh;
-
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.taust{
-    background-color: #000000e5;
-    height: 100vh;
-    width:100%;
-    position: absolute;
-    padding: 0 5%;
+    height: 100%;
+  }
+  
+  #map-container {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+    height: 100vh; /* Full height of the viewport */
+  }
+  
+  /* Add additional styling for the map element */
+  #map {
+    width: 80%; /* Adjust the width of the map as needed */
+    height: 80%; /* Adjust the height of the map as needed */
+  }
 
-.taustP{
-    background-color: rgba(0, 0, 0, 0.445);
-    height: 100vh;
-    width:100%;
-    position: absolute;
-    object-fit: cover;
-    padding: 0 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Nav bar*/
+  /* Nav bar*/
 
 nav .logo {
     width: 210px;
     height: auto;
     left: 1%;
-    margin-top: 20px;
+    top: 1%;
     
-}
-
-.pic {
-    width: 20%;
-    height: 20%;
-    left: 300px;
-
 }
 
 nav {
@@ -94,7 +68,6 @@ nav ul li a:hover:after {
 }
 
 
-
 .content {
     text-align: center;
     font-size: 5px;
@@ -113,7 +86,7 @@ nav ul li a:hover:after {
     display: inline-block;
     color: #000000;
     font-size: 50px;
-    border: 2px solid rgb(236, 142, 0);
+    border: 2px solid #ffffff;
     padding: 10px 60px;
     border-radius: 50px;
     margin-top: 0px;
@@ -123,22 +96,4 @@ nav ul li a:hover:after {
 
 .content a:hover {
     background-color: rgb(236, 142, 0);
-}
-
-
-/*Annab headerile tausta värvi*/
-.header {
-    background-color: #000000;
-    padding: 0.1px; 
-    text-align: left; 
-}
-
-
-/*Annab tekstile outline-i*/
-.textoutline {
-    text-shadow:
-        -1px -1px 0 rgb(255, 255, 255),
-        1px -1px 0 #ffffff,
-        -1px 1px 0 #ffffff,
-        1px 1px 0 #ffffff;
 }
